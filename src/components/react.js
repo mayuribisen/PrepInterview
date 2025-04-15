@@ -33,7 +33,7 @@ export const reactbasic = [
   Example:
   const element = <h1>Hello JSX</h1>;
   
-  ⚡ JSX is not HTML, but it looks similar and compiles to React.createElement() under the hood.`
+  JSX is not HTML, but it looks similar and compiles to React.createElement() under the hood.`
     },
     {
       id: 4,
@@ -49,7 +49,6 @@ export const reactbasic = [
       return <h1>Hello, {this.props.name}</h1>;
     }
   }
-  
   // Functional Component
   function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
@@ -60,7 +59,7 @@ export const reactbasic = [
       question: "What is the virtual DOM?",
       answer: `The virtual DOM is a lightweight JavaScript representation of the actual DOM.
   
-  🌀 React creates a virtual DOM and updates it in memory instead of updating the real DOM immediately. 
+  React creates a virtual DOM and updates it in memory instead of updating the real DOM immediately. 
   When changes occur, it compares the new virtual DOM with the previous one (diffing),
   and only applies necessary updates to the real DOM for better performance.`
     },
@@ -153,12 +152,10 @@ export const reactbasic = [
   - Rendering 'null' means rendering nothing (returns no element).
   - Rendering 'undefined' often causes no output, but it's better to avoid directly rendering it.
   
-  ✅ Use conditional rendering to avoid showing unwanted content.`
+   Use conditional rendering to avoid showing unwanted content.`
     }
   ];
-  
-
-  
+   
   export const reactintermediate = [
     {
       id: 1,
@@ -325,9 +322,6 @@ export const reactbasic = [
   - Tailwind or Bootstrap frameworks`
     }
   ];
-  
-
-
   
   export const reactadvanced = [
     {

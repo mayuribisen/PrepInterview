@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 const JavaScriptQuestions = ({ question, answer }) => {
     const [show, setShow] = useState(false);
 
-    return (
-        
+    return ( 
         <>
         <div className='main-heading'>
             <p onClick={() => setShow(!show)}>{show ? "➖":" ➕"}</p>

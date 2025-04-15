@@ -312,9 +312,7 @@
   console.log(typeof 123); // 'number'
   console.log(typeof 'abc'); // 'string'`
     }
-  ];
-  
-  
+  ]; 
   export const jsadvanced = [
     {
       id: 1,

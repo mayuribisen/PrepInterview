@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className='parent-div'>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div className="container">
-        {/* <Link className="navbar-brand fw-bold fs-4" to="/">Interview Prep</Link> */}
-        <div className="logo"><span> <img src='image.png' width='50px' height='40px' alt='icon' /></span> Prep<span className="highlight">Interview</span></div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm w-100">
+      <div className="container-fluid">  
+        
+         <Link className="navbar-brand fw-bold fs-4 d-flex align-items-center" to="/">
+      <img src={`${process.env.PUBLIC_URL}/image.png`} width="40" height="35" alt="icon" className="me-2" />
+       <span>Prep<span className="text-warning">Interview</span></span>
+         </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -19,7 +21,6 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -44,7 +45,6 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-    </div>
   );
 };
 

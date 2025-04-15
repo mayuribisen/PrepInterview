@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
-const ReactQuestion = ({ question, answer }) => {
+const BootstrapQuestions = ({ question, answer }) => {
     const [show, setShow] = useState(false);
 
     return (
-        
         <>
         <div className='main-heading'>
             <p onClick={() => setShow(!show)}>{show ? "➖":" ➕"}</p>
@@ -15,4 +14,4 @@ const ReactQuestion = ({ question, answer }) => {
     );
 };
 
-export default ReactQuestion;
+export default BootstrapQuestions;

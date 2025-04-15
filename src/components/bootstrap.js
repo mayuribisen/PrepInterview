@@ -27,7 +27,6 @@
   
   1. CDN (easiest method):
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  
   2. Download and host the files locally.
   3. Install via npm or yarn in a Node.js project:
   npm install bootstrap`
@@ -42,7 +41,6 @@
     <div class="col-6">Column 1</div>
     <div class="col-6">Column 2</div>
   </div>
-  
   This creates two equal-width columns that are responsive across devices.`
     },
     {
@@ -115,7 +113,6 @@
       id: 10,
       question: "What is the use of the .row class in Bootstrap?",
       answer: `.row is used to create horizontal groups of columns. It ensures proper spacing between columns using negative margins and padding.
-  
   Always place .col-* classes inside a .row.
   
   Example:
@@ -175,9 +172,6 @@
     }
   ];
 
-
- 
-  
   export const bootintermediate = [
     {
       id: 1,

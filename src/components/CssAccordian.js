@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
-import { bootbasic, bootintermediate, bootadvanced } from './bootstrap';
-import './accordion.css';
-import BootstrapQuestions from './BootstrapQuestions';
+import { cssbasic, cssintermediate, cssadvanced } from './css';
+import CssQuestions from './CssQuestions';
 
-
-const BootstrapAccordian = () => {
+const CssAccordian = () => {
     const [category, setCategory] = useState('basic');
 
     let currentQuestions = [];
-    if (category === 'basic') currentQuestions = bootbasic;
-    else if (category === 'intermediate') currentQuestions = bootintermediate;
-    else if (category === 'advanced') currentQuestions = bootadvanced;
+    if (category === 'basic') currentQuestions = cssbasic;
+    else if (category === 'intermediate') currentQuestions = cssintermediate;
+    else if (category === 'advanced') currentQuestions = cssadvanced;
 
     return (
-        <div className='parent-div'>
+    <div className='parent-div'>
         <section className='main-div'>
-            <h1>Bootstrap Interview Questions</h1>
-
-         
+            <h1>CSS Interview Questions</h1>
                 <ul className="category-list">
                     <li onClick={() => setCategory('basic')} className={category === 'basic' ? 'active' : ''}>Basic</li>
                     <li onClick={() => setCategory('intermediate')} className={category === 'intermediate' ? 'active' : ''}>Intermediate</li>
@@ -26,13 +22,13 @@ const BootstrapAccordian = () => {
                 <div className='vertical-slider'>
                 <div className="questions">
                     {currentQuestions.map((curElem) => (
-                        <BootstrapQuestions key={curElem.id} {...curElem} />
+                        <CssQuestions key={curElem.id} {...curElem} />
                     ))}
                 </div>
             </div>
         </section>
-        </div>
+    </div>
     );
 };
 
-export default BootstrapAccordian;
+export default CssAccordian;

@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 
-const CssQuestions = ({ question, answer }) => {
+const HtmlQuestions = ({ question, answer }) => {
     const [show, setShow] = useState(false);
-
-    return (
-        
+    return (    
         <>
         <div className='main-heading'>
             <p onClick={() => setShow(!show)}>{show ? "➖":" ➕"}</p>
             <h3>{question}</h3>
-        </div>
+        </div>   
         {show && <p className='answers'><pre>{answer}</pre></p>}
         </>
     );
 };
 
-export default CssQuestions;
+export default HtmlQuestions;

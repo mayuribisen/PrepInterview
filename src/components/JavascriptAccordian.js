@@ -1,24 +1,20 @@
 import React, { useState } from 'react';
-import { cssbasic, cssintermediate, cssadvanced } from './css';
-import './accordion.css';
-import CssQuestions from './CssQuestions';
+import { jsbasic, jsintermediate, jsadvanced } from './javascript';
+import JavaScriptQuestions from './JavascriptQuestions';
 
-
-const CssAccordian = () => {
+const JavaScriptAccordian = () => {
     const [category, setCategory] = useState('basic');
 
     let currentQuestions = [];
-    if (category === 'basic') currentQuestions = cssbasic;
-    else if (category === 'intermediate') currentQuestions = cssintermediate;
-    else if (category === 'advanced') currentQuestions = cssadvanced;
+    if (category === 'basic') currentQuestions = jsbasic;
+    else if (category === 'intermediate') currentQuestions = jsintermediate;
+    else if (category === 'advanced') currentQuestions = jsadvanced;
 
     return (
-    <div className='parent-div'>
+        <div className='parent-div'>
         <section className='main-div'>
-            <h1>CSS Interview Questions</h1>
-
-          
-                <ul className="category-list">
+            <h1>JavaScript Interview Questions</h1>
+                 <ul className="category-list">
                     <li onClick={() => setCategory('basic')} className={category === 'basic' ? 'active' : ''}>Basic</li>
                     <li onClick={() => setCategory('intermediate')} className={category === 'intermediate' ? 'active' : ''}>Intermediate</li>
                     <li onClick={() => setCategory('advanced')} className={category === 'advanced' ? 'active' : ''}>Advanced</li>
@@ -26,13 +22,13 @@ const CssAccordian = () => {
                 <div className='vertical-slider'>
                 <div className="questions">
                     {currentQuestions.map((curElem) => (
-                        <CssQuestions key={curElem.id} {...curElem} />
+                        <JavaScriptQuestions key={curElem.id} {...curElem} />
                     ))}
                 </div>
             </div>
         </section>
-    </div>
+        </div>
     );
 };
 
-export default CssAccordian;
+export default JavaScriptAccordian;

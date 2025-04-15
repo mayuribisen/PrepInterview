@@ -9,16 +9,14 @@ function Home() {
     { title: "CSS", desc: "Layout, Flexbox, Grid", path: "/csspage" },
     { title: "Bootstrap", desc: "Grid, Components", path: "/bootpage" },
     { title: "JavaScript", desc: "Concepts, ES6+", path: "/jspage" },
-    { title: "React", desc: "Hooks, State", path: "/reactpage" },
-    
+    { title: "React", desc: "Hooks, State", path: "/reactpage" }, 
   ];
 
   return (
     <div className='parent-div'>
-    <div className="container mt-5 text-center">
+    <div className="container mt-5 text-center ">
       <h1 className="display-3 text-primary">🚀Interview Buddy</h1>
       <p className="lead">Master Frontend Interviews with confidence!</p>
-
       <p className="mt-3">Select a topic from the top navigation to begin your preparation.</p>
 
       {/* All cards in a single row without scrolling */}

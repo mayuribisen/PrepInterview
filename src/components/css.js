@@ -18,9 +18,9 @@
       id: 2,
       question: "What are the different types of CSS?",
       answer: `There are three types of CSS:
-  1. **Inline CSS**: Applied directly on elements using the style attribute.
-  2. **Internal CSS**: Defined within a <style> tag in the HTML <head>.
-  3. **External CSS**: Linked through an external file using <link> tag.
+  1. Inline CSS: Applied directly on elements using the style attribute.
+  2. Internal CSS: Defined within a <style> tag in the HTML <head>.
+  3. External CSS: Linked through an external file using <link> tag.
   
   Example:
   <link rel="stylesheet" href="styles.css">`
@@ -28,8 +28,8 @@
     {
       id: 3,
       question: "What is the difference between class and ID selectors in CSS?",
-      answer: `- **Class selector**: Targets multiple elements and is prefixed with a dot (e.g., .btn).
-  - **ID selector**: Targets a single unique element and is prefixed with a hash (e.g., #header).
+      answer: `- Class selector: Targets multiple elements and is prefixed with a dot (e.g., .btn).
+  - ID selector: Targets a single unique element and is prefixed with a hash (e.g., #header).
   
   Example:
   CSS:
@@ -43,10 +43,10 @@
       id: 4,
       question: "What is the box model in CSS?",
       answer: `The box model describes how elements are structured in CSS:
-  - **Content**: The actual content.
-  - **Padding**: Space around the content.
-  - **Border**: Line around the padding.
-  - **Margin**: Space outside the border.
+  - Content: The actual content.
+  - Padding: Space around the content.
+  - Border: Line around the padding.
+  - Margin: Space outside the border.
   
   Example:
   div {
@@ -81,9 +81,9 @@
     {
       id: 7,
       question: "What is the difference between relative, absolute, and fixed positioning?",
-      answer: `- **Relative**: Positioned relative to its normal position.
-  - **Absolute**: Positioned relative to the nearest positioned ancestor.
-  - **Fixed**: Positioned relative to the viewport and doesn’t move on scroll.
+      answer: `- Relative: Positioned relative to its normal position.
+  - Absolute: Positioned relative to the nearest positioned ancestor.
+  - Fixed: Positioned relative to the viewport and doesn’t move on scroll.
   
   Example:
   div {
@@ -182,14 +182,13 @@
     }
   ];
   
-  
   export const cssintermediate = [
     {
       id: 1,
       question: "What is the difference between 'em', 'rem', and 'px' units in CSS?",
-      answer: `- **px**: An absolute unit; 1px = 1 pixel on the screen.
-  - **em**: Relative to the font-size of the parent element.
-  - **rem**: Relative to the root (html) font-size.
+      answer: `- px: An absolute unit; 1px = 1 pixel on the screen.
+  - em: Relative to the font-size of the parent element.
+  - rem: Relative to the root (html) font-size.
   
   Example:
   html { font-size: 16px; }
@@ -199,8 +198,8 @@
     {
       id: 2,
       question: "What is the difference between visibility: hidden and display: none?",
-      answer: `- **display: none** removes the element from the document flow; no space is occupied.
-  - **visibility: hidden** hides the element, but the space is still occupied.
+      answer: `- display: none removes the element from the document flow; no space is occupied.
+  - visibility: hidden hides the element, but the space is still occupied.
   
   Example:
   div { visibility: hidden; }
@@ -221,9 +220,9 @@
     {
       id: 4,
       question: "What is the difference between inline, block, and inline-block elements?",
-      answer: `- **inline**: Does not start on a new line; only takes as much width as necessary.
-  - **block**: Takes up full width and starts on a new line.
-  - **inline-block**: Like inline but allows setting width and height.
+      answer: `- inline: Does not start on a new line; only takes as much width as necessary.
+  - block: Takes up full width and starts on a new line.
+  - inline-block: Like inline but allows setting width and height.
   
   Example:
   div { display: inline-block; width: 100px; height: 50px; }`
@@ -256,7 +255,6 @@
   
   Examples:
   ::before, ::after, ::first-letter
-  
   p::first-letter {
     font-size: 200%;
   }`
@@ -264,8 +262,8 @@
     {
       id: 8,
       question: "What is the difference between relative and absolute positioning?",
-      answer: `- **relative**: Positions relative to the element’s normal position.
-  - **absolute**: Positions relative to the nearest positioned ancestor (not static).
+      answer: `- relative: Positions relative to the element’s normal position.
+  - absolute: Positions relative to the nearest positioned ancestor (not static).
   
   Example:
   .parent { position: relative; }
@@ -282,9 +280,9 @@
     {
       id: 10,
       question: "What is the difference between min-width, max-width, and width?",
-      answer: `- **width**: Sets a fixed width.
-  - **min-width**: Minimum possible width.
-  - **max-width**: Maximum allowed width.
+      answer: `- width: Sets a fixed width.
+  - min-width: Minimum possible width.
+  - max-width: Maximum allowed width.
   
   Example:
   div {
@@ -305,8 +303,8 @@
     {
       id: 12,
       question: "How does CSS Grid differ from Flexbox?",
-      answer: `- **Flexbox** is one-dimensional (row or column).
-  - **Grid** is two-dimensional (rows and columns).
+      answer: `- Flexbox is one-dimensional (row or column).
+  - Grid is two-dimensional (rows and columns).
   
   Example:
   display: grid;
@@ -316,10 +314,10 @@
       id: 13,
       question: "What are the different combinators in CSS?",
       answer: `Combinators define relationships between selectors:
-  - **descendant** (space)
-  - **child** (>)
-  - **adjacent sibling** (+)
-  - **general sibling** (~)
+  - descendant (space)
+  - child (>)
+  - adjacent sibling (+)
+  - general sibling (~)
   
   Example:
   div > p { color: red; }`
@@ -337,9 +335,9 @@
     {
       id: 15,
       question: "What is the difference between opacity and visibility?",
-      answer: `- **opacity: 0** hides element but keeps it in the layout; it's still clickable.
-  - **visibility: hidden** hides element and reserves space.
-  - **display: none** hides and removes space.
+      answer: `- opacity: 0 hides element but keeps it in the layout; it's still clickable.
+  - visibility: hidden hides element and reserves space.
+  - display: none hides and removes space.
   
   Use depending on layout and interaction requirements.`
     }
@@ -349,8 +347,8 @@
     {
       id: 1,
       question: "What is the difference between CSS Grid and Flexbox?",
-      answer: `- **CSS Grid** is a two-dimensional layout system (rows and columns).
-  - **Flexbox** is one-dimensional (either row or column).
+      answer: `- CSS Grid is a two-dimensional layout system (rows and columns).
+  - Flexbox is one-dimensional (either row or column).
   
   Use Grid when you need to design complex layouts with both axes. Flexbox is better for simpler, linear layouts.
   
@@ -375,8 +373,8 @@
     {
       id: 3,
       question: "What are pseudo-classes and pseudo-elements?",
-      answer: `- **Pseudo-classes**: Apply styles based on state (e.g., :hover, :focus)
-  - **Pseudo-elements**: Style specific parts (e.g., ::before, ::after)
+      answer: `- Pseudo-classes: Apply styles based on state (e.g., :hover, :focus)
+  - Pseudo-elements: Style specific parts (e.g., ::before, ::after)
   
   Example:
   a:hover { color: red; }
@@ -395,17 +393,17 @@
     {
       id: 5,
       question: "What is the difference between absolute, relative, fixed, and sticky positioning?",
-      answer: `- **relative**: Relative to its normal position.
-  - **absolute**: Relative to the nearest positioned ancestor.
-  - **fixed**: Positioned relative to the viewport.
-  - **sticky**: Switches between relative and fixed depending on scroll position.`
+      answer: `- relative: Relative to its normal position.
+  - absolute: Relative to the nearest positioned ancestor.
+  - fixed: Positioned relative to the viewport.
+  - sticky: Switches between relative and fixed depending on scroll position.`
     },
     {
       id: 6,
       question: "What is the difference between transform, translate, and transition?",
-      answer: `- **transform** changes an element’s appearance (rotate, scale, translate).
-  - **translate** moves an element without affecting layout.
-  - **transition** adds animation effects when values change.
+      answer: `- transform changes an element’s appearance (rotate, scale, translate).
+  - translate moves an element without affecting layout.
+  - transition adds animation effects when values change.
   
   Example:
   div {
@@ -493,8 +491,8 @@
     {
       id: 14,
       question: "What is reflow and repaint in CSS rendering?",
-      answer: `- **Reflow**: Browser recalculates layout (expensive).
-  - **Repaint**: Only visual changes like color.
+      answer: `- Reflow: Browser recalculates layout (expensive).
+  - Repaint: Only visual changes like color.
   
   Avoid frequent DOM changes to improve performance.`
     },

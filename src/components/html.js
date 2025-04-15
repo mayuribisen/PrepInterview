@@ -26,7 +26,6 @@ export const htmlbasic = [
   In HTML5, it looks like this:
   
   <!DOCTYPE html>
-  
   It ensures that the browser renders the page in standards mode. Without it, browsers may switch to quirks mode, which can cause inconsistent rendering across different browsers.`
     },
     {
@@ -190,7 +189,6 @@ export const htmlbasic = [
   <p>5 &lt; 10 is true.</p>`
     }
   ];
-  
   
   export const htmlintermediate = [
     {
@@ -419,7 +417,6 @@ export const htmlbasic = [
     }
   ];
 
-  
   export const htmladvanced = [
     {
       id: 1,
@@ -441,7 +438,6 @@ export const htmlbasic = [
   
   Example:
   <canvas id="myCanvas" width="200" height="100"></canvas>
-  
   JavaScript:
   const canvas = document.getElementById("myCanvas");
   const ctx = canvas.getContext("2d");
@@ -478,12 +474,12 @@ export const htmlbasic = [
       id: 5,
       question: "How does browser rendering work with HTML and CSS?",
       answer: `Rendering involves several steps:
-  1. **Parsing HTML** into the DOM tree.
-  2. **Parsing CSS** into the CSSOM tree.
-  3. **Render Tree** construction from DOM + CSSOM.
-  4. **Layout**: Calculating positions and sizes.
-  5. **Painting**: Filling in pixels.
-  6. **Compositing**: Final image shown to user.
+  1. Parsing HTML into the DOM tree.
+  2. Parsing CSS into the CSSOM tree.
+  3. Render Tree construction from DOM + CSSOM.
+  4. Layout: Calculating positions and sizes.
+  5. Painting: Filling in pixels.
+  6. Compositing: Final image shown to user.
   
   Efficient structure and styles lead to faster rendering and better performance.`
     },
