@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PrepInterview/static/css/main.9c50b321.css",
+    "main.css": "/PrepInterview/static/css/main.f290fbc5.css",
     "main.js": "/PrepInterview/static/js/main.25dd21fd.js",
     "static/js/453.800b1ebb.chunk.js": "/PrepInterview/static/js/453.800b1ebb.chunk.js",
     "index.html": "/PrepInterview/index.html",
-    "main.9c50b321.css.map": "/PrepInterview/static/css/main.9c50b321.css.map",
+    "main.f290fbc5.css.map": "/PrepInterview/static/css/main.f290fbc5.css.map",
     "main.25dd21fd.js.map": "/PrepInterview/static/js/main.25dd21fd.js.map",
     "453.800b1ebb.chunk.js.map": "/PrepInterview/static/js/453.800b1ebb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c50b321.css",
+    "static/css/main.f290fbc5.css",
     "static/js/main.25dd21fd.js"
   ]
 }
